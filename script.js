@@ -35,7 +35,7 @@ scrollToTopBtn.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
-// script.js
+
 document.querySelector('.form').addEventListener('submit', (e) => {
     const name = document.querySelector('#name').value;
     const email = document.querySelector('#email').value;
@@ -45,7 +45,7 @@ document.querySelector('.form').addEventListener('submit', (e) => {
         alert('All fields must be filled out.');
     }
 });
-// script.js
+
 const images = document.querySelectorAll('.gallery img');
 const lightbox = document.querySelector('.lightbox');
 const lightboxImage = document.querySelector('.lightbox img');
@@ -60,4 +60,15 @@ images.forEach((img) => {
 
 closeBtn.addEventListener('click', () => {
     lightbox.style.display = 'none';
+});
+
+const navbar = document.querySelector('.navbar');
+const sticky = navbar.offsetTop;
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > sticky) {
+        navbar.classList.add('sticky');
+    } else {
+        navbar.classList.remove('sticky');
+    }
 });
