@@ -146,4 +146,23 @@
     transition: transform 0.3s 0.3s;
   }
   /* End of Section 1 */
+  /* Section 2 */
+.section-2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #5A5A5A;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10rem 0;
+  }
   
+  .cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    /* padding: 0 5%; */
+  }
+  
+  .card-wrapper {
+    perspective: 1000rem;
+  }
