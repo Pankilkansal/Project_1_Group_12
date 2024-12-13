@@ -38,3 +38,7 @@
     /* text-align: center; */
     transition: top 0.4s;
   }
+  .navbar.change {
+    top: 0;
+    transition: top 0.4s 0.2s;
+  }
