@@ -1,9 +1,10 @@
 
 document.querySelector('.menu').addEventListener('click', () => {
-    document.querySelectorAll('.navbar-link').forEach((item) => {
-        item.classList.toggle('change');
-    });
-});
+	document.querySelectorAll('.target').forEach((item) => {
+		item.classList.toggle('change');
+	})
+})
+
 
 const scrollToTopBtn = document.querySelector('.scroll-to-top');
 
