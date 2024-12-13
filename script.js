@@ -72,3 +72,8 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('sticky');
     }
 });
+
+document.querySelector('.dropdown-button').addEventListener('click', () => {
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    dropdownMenu.classList.toggle('show');
+});
