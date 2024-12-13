@@ -45,3 +45,19 @@ document.querySelector('.form').addEventListener('submit', (e) => {
         alert('All fields must be filled out.');
     }
 });
+// script.js
+const images = document.querySelectorAll('.gallery img');
+const lightbox = document.querySelector('.lightbox');
+const lightboxImage = document.querySelector('.lightbox img');
+const closeBtn = document.querySelector('.lightbox-close');
+
+images.forEach((img) => {
+    img.addEventListener('click', () => {
+        lightbox.style.display = 'block';
+        lightboxImage.src = img.src;
+    });
+});
+
+closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+});
