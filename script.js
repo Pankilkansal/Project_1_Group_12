@@ -35,3 +35,13 @@ scrollToTopBtn.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+// script.js
+document.querySelector('.form').addEventListener('submit', (e) => {
+    const name = document.querySelector('#name').value;
+    const email = document.querySelector('#email').value;
+    
+    if (!name || !email) {
+        e.preventDefault(); // Prevent form submission
+        alert('All fields must be filled out.');
+    }
+});
